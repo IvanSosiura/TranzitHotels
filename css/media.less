@@ -16,6 +16,9 @@
     left: 15px;
 }
 
+//.main_menu input.toggleMenu{
+//    width: 100%;
+//}
 
 //1200px
 
@@ -95,10 +98,6 @@
 //800px
 
 @media all and (max-width: 800px){
-    html { 
-        overflow-x:  hidden; 
-    }
-    
     .main_menu{
         overflow: hidden;
     }
@@ -131,6 +130,7 @@
     }
     
     .logo{
+        width: 100%;
         padding: 10px;
         background: rgba( 0, 0, 0, 0.9);
     }
@@ -247,21 +247,17 @@
         top: 10%;
         left: 20%;
     }
+    
+    .content_a{
+        padding: 25px 0;
+    }
 }
 
 @media all and (max-width: 480px){
-    html { 
-        overflow-x:  hidden; 
-    }
     .inpt{
-        width: 360px;
-        padding: 0 10px;
-        h2{
-            width: 350px;
-        }  
-        p{
-            width: 350px;
-        }
+        width: 100%;
+        padding: 0px;
+        box-sizing: border-box;
     }
     
     .inpt_wrapper{
@@ -275,6 +271,7 @@
     
     .content_a{
         width: 360px;
+        padding: 0;
         h2{
             padding: 40px 0;
         }
@@ -292,18 +289,15 @@
 }
 
 @media all and (max-width: 360px){
-    html { 
-        overflow-x:  hidden; 
-    }
     .inpt{
-        width: 360px;
-        padding: 0 10px;
-        h2{
-            width: 330px;
-        }  
-        p{
-            width: 330px;
-        }
+        width: 100%;
+        padding: 0 5px;
+//        h2{
+//            width: 330px;
+//        }  
+//        p{
+//            width: 330px;
+//        }
     }
     
     .inpt_wrapper{
@@ -349,15 +343,13 @@
     }
     
     .popup{
+        width: 250px;
         top: 10%;
-        left: 0;
+        left: 5%;
     }
 }
 
 @media all and (max-width: 320px){
-    html { 
-        overflow-x:  hidden; 
-    }
     .inpt{
         width: 320px;
         padding: 0 10px;
@@ -374,6 +366,10 @@
         h2{
             padding: 40px 0;
         }
+    }
+    .popup{
+        width: 250px;
+         left: 2%;
     }
 }
 
